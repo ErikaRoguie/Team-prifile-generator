@@ -1,4 +1,4 @@
-gitHub link https://github.com/sandy-06/teamProfileGenerator
+gitHub link https://github.com/ErikaRoguie/Team-profile-generator
 
 # 10 Object-Oriented Programming: Team Profile Generator
 
