@@ -1,13 +1,21 @@
 {
   "name": "team-profile-generator",
+<<<<<<< HEAD
   "version": "1.0.0",
+=======
+  "version": "1.2.0",
+>>>>>>> 88060a7d96bd667175146a9bc8483b157a22509b
   "description": "generate intel profiles for members of a team",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
+<<<<<<< HEAD
     "test": "test"
+=======
+    "test": "Jest"
+>>>>>>> 88060a7d96bd667175146a9bc8483b157a22509b
   },
   "repository": {
     "type": "git",
@@ -22,5 +30,12 @@
   "bugs": {
     "url": "https://github.com/ErikaRoguie/Team-prifile-generator/issues"
   },
+<<<<<<< HEAD
   "homepage": "https://github.com/ErikaRoguie/Team-prifile-generator#readme"
+=======
+  "homepage": "https://github.com/ErikaRoguie/Team-prifile-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+>>>>>>> 88060a7d96bd667175146a9bc8483b157a22509b
 }
