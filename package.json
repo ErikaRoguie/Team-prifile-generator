@@ -1,25 +1,26 @@
 {
-  "name": "teamprofilegenerator",
+  "name": "team-profile-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "generate intel profiles for members of a team",
   "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
-    "test": "jest",
-    "run": "start"
-    
+    "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sandy-06/teamProfileGenerator.git"
+    "url": "git+https://github.com/ErikaRoguie/Team-prifile-generator.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "team",
+    "members"
+  ],
+  "author": "Erika Sanders",
+  "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/sandy-06/teamProfileGenerator/issues"
+    "url": "https://github.com/ErikaRoguie/Team-prifile-generator/issues"
   },
-  "homepage": "https://github.com/sandy-06/teamProfileGenerator#readme",
-  "dependencies": {
-    "inquirer": "^8.2.0",
-    "jest": "^27.3.1"
-  }
+  "homepage": "https://github.com/ErikaRoguie/Team-prifile-generator#readme"
 }
