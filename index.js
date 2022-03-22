@@ -185,7 +185,7 @@ const addEmployee = () => {
     } else {
         console.log(teamArray)
         const teamPage = generateTeamPage(teamArray)
-        fs.writeFile('./dist/index.html', teamPage, () =>{
+        fs.writeFile('./index.html', teamPage, () =>{
             console.log('done');
         })
 

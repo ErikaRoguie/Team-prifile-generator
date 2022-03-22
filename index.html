@@ -1,73 +1,4 @@
-const generateTeam = team => {
 
-  const generateManager = Manager => {
-    return `
-      <div class="card" "col-3">
-      
-      <div class="card-body bg-primary">
-        <h3 class="card-title text-white">${Manager.getName()}</h3>
-        <p class="card-text text-white"><i class="fas fa-mug-hot"></i>${Manager.getRole()}</p>
-      </div>
-      <ul class="list-group list-group-flex-inLine">
-        <li class="list-group-item">ID  ${Manager.getId()}</li>
-        <li class="list-group-item">email  ${Manager.getEmail()}</li>
-        <li class="list-group-item">Office Number ${Manager.getOfficeNumber()}</li>
-      </ul>
-      
-    </div>`
-
-  };
-
-  const generateEngineer = Engineer => {
-    return `
-      <div class="card" "col-3">
-      
-      <div class="card-body bg-primary ">
-        <h3 class="card-title text-white">${Engineer.getName()}</h3>
-        <p class="text-white"><i class="fas fa-glasses"></i>${Engineer.getRole()}</p>
-      </div>
-      <ul class="list-group list-group-flex-inLine">
-        <li class="list-group-item">${Engineer.getId()}</li>
-        <li class="list-group-item">${Engineer.getEmail()}</li>
-        <li class="list-group-item">${Engineer.getGithub()}</li>
-      </ul>
-      
-    </div>`
-
-  };
-
-  const generateIntern = Intern => {
-    return `
-      <div class="card" "col-3" >
-     
-      <div class="card-body bgColor">
-        <h3 class="card-title text-white">${Intern.getName()}</h3>
-        <p class="card-text text-white"><i class="fas fa-user-graduate"></i></i>${Intern.getRole()}</p>
-      </div>
-      <ul class="list-group list-group-flex-inLine">
-        <li class="list-group-item">${Intern.getId()}</li>
-        <li class="list-group-item">${Intern.getEmail()}</li>
-        <li class="list-group-item">${Intern.getSchool()}</li>
-      </ul>
-      
-    </div>`
-
-  };
-  const html = [];
-
-  html.push(team.filter(item => item.getRole() === "Manager").map(manager => generateManager(manager)));
-
-  html.push(team.filter(item => item.getRole() === "Engineer").map(engineer => generateEngineer(engineer)));
-
-  html.push(team.filter(item => item.getRole() === "Intern").map(intern => generateIntern(intern)));
-
-
-
-  return html.join('');
-}
-function generateTeamPage(team) {
-
-  return `
         <!DOCTYPE html>
             <html lang="en">
 
@@ -80,12 +11,12 @@ function generateTeamPage(team) {
                                     <link href="https://fonts.googleapis.com/css?family=Public+Sans:300i,300,500&display=swap" rel="stylesheet">
                                     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
                                     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
-                                        <link rel="stylesheet" href="src/style.css">
+                                        <link rel="stylesheet" href="./src/style.css">
                                         </head>
 
                                         <body>
                                             <header>
-                                                <div class="container bg-primary text-light ">
+                                                <div class="container bg-danger text-light ">
                                                 <br>
                                                     <h1 class="justify-center">My Team</h1>
                                                     <br>
@@ -95,7 +26,33 @@ function generateTeamPage(team) {
                                             <main class="container my-5">
                                                 <div class= "row justify-content-around mx-3">
 
-                                                 ${generateTeam(team)} 
+                                                 
+      <div class="card" "col-3">
+      
+      <div class="card-body bg-primary">
+        <h3 class="card-title text-white">cde</h3>
+        <p class="card-text text-white"><i class="fas fa-mug-hot"></i>Manager</p>
+      </div>
+      <ul class="list-group list-group-flex-inLine">
+        <li class="list-group-item">ID  dce</li>
+        <li class="list-group-item">email  ced</li>
+        <li class="list-group-item">Office Number edc</li>
+      </ul>
+      
+    </div>
+      <div class="card" "col-3">
+      
+      <div class="card-body bg-primary ">
+        <h3 class="card-title text-white">edc</h3>
+        <p class="text-white"><i class="fas fa-glasses"></i>Engineer</p>
+      </div>
+      <ul class="list-group list-group-flex-inLine">
+        <li class="list-group-item">edc</li>
+        <li class="list-group-item">edc</li>
+        <li class="list-group-item">edc</li>
+      </ul>
+      
+    </div> 
                                                 </div>
                                             </main>
 
@@ -108,7 +65,4 @@ function generateTeamPage(team) {
                                         <script src="./assets/js/script.js"></script>
 
                                     </html>
-                            `;
-
-}
-module.exports = generateTeamPage;
+                            
