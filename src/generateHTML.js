@@ -1,5 +1,3 @@
-
-
 const generateTeam = team => {
 
   const generateManager = Manager => {
